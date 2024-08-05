@@ -4,6 +4,10 @@ This repo contains a working app that includes CRUD operations for fruit. It has
 
 Our task is to complete the authentication implementation of this app.
 
+## MVP
+
+- Complete steps 0 - 11
+
 ## Setup
 
 ### 0. Installation and migrations
