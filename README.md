@@ -270,7 +270,7 @@ Commit your code and swap driver/navigator if you're pairing.
 
 ### 10. Setting up the JWT Middleware
 
-- [ ] In `server/auth0.ts`, set the `domain`(1️⃣, see tip below for required format) and `audience`(3️⃣) values
+- [x] In `server/auth0.ts`, set the `domain`(1️⃣, see tip below for required format) and `audience`(3️⃣) values
   <details style="padding-left: 2em">
     <summary>Tip</summary>
 
@@ -281,7 +281,7 @@ Commit your code and swap driver/navigator if you're pairing.
 
 There are three routes in `server/routes/fruits.ts` that we want to be accessible only for authenticated users.
 
-- [ ] In each of the routes we want to protect, pass `checkJwt` as a second parameter
+- [x] In each of the routes we want to protect, pass `checkJwt` as a second parameter
   <details style="padding-left: 2em">
     <summary>More about protecting routes</summary>
 
