@@ -235,7 +235,7 @@ Commit your code and swap driver/navigator if you're pairing.
 
 We only want to allow a user to use our server routes if the user has been authenticated. We can retrieve a JWT token from Auth0 with `getAccessTokenSilently`, we want to pass it as a header when calling our server-side routes.
 
-- [ ] In `client/components/Fruits.tsx` destructure `getAccessTokenSilently`, and call it in the `handleAdd` event handler to retrieve a token. Note: `getAccessTokenSilently` returns a Promise.
+- [x] In `client/components/Fruits.tsx` destructure `getAccessTokenSilently`, and call it in the `handleAdd` event handler to retrieve a token. Note: `getAccessTokenSilently` returns a Promise.
   <details style="padding-left: 2em">
     <summary>Tips</summary>
 
@@ -259,8 +259,8 @@ We only want to allow a user to use our server routes if the user has been authe
 
   </details>
 
-- [ ] Pass `token` to the `addFruit` function as the second parameter
-- [ ] Repeat the same steps for `handleUpdate` and `handleDelete`
+- [x] Pass `token` to the `addFruit` function as the second parameter
+- [x] Repeat the same steps for `handleUpdate` and `handleDelete`
 
 Commit your code and swap driver/navigator if you're pairing.
 
