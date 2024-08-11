@@ -169,7 +169,7 @@ Commit your code and swap driver/navigator if you're pairing.
 
 In `client/components/Authenticated.tsx`:
 
-- [ ] Explore `Authenticated.tsx` and the use of `isAuthenticated`
+- [x] Explore `Authenticated.tsx` and the use of `isAuthenticated`
   <details style="padding-left: 2em">
     <summary>More about <code>Authenticated.tsx</code></summary>
 
@@ -180,8 +180,8 @@ In `client/components/Authenticated.tsx`:
   Right now there is a placeholder `useIsAuthenticated` hook which is hard-coded to return `true`.
   </details>
 
-- [ ] Import the `useAuth0` hook from within `@auth0/auth0-react`
-- [ ] Call `useAuth0` within the `useIsAuthenticated` **function**, destructure the `isAuthenticated` **property** out of it and return this boolean variable
+- [x] Import the `useAuth0` hook from within `@auth0/auth0-react`
+- [x] Call `useAuth0` within the `useIsAuthenticated` **function**, destructure the `isAuthenticated` **property** out of it and return this boolean variable
   <details style="padding-left: 2em">
     <summary>More about <code>useIsAuthenticated</code></summary>
 
@@ -196,9 +196,9 @@ Now is a good time to commit your changes and swap driver/navigator if you're pa
 
 In `client/components/Nav.tsx`:
 
-- [ ] Import the `useAuth0` hook from `@auth0/auth0-react` and use it inside the `<Nav>` component
-- [ ] Destructure the `logout`, and `loginWithRedirect` functions out of the `useAuth0` hook
-- [ ] Call these functions in the two handlers (instead of the `console.log` placeholders)
+- [x] Import the `useAuth0` hook from `@auth0/auth0-react` and use it inside the `<Nav>` component
+- [x] Destructure the `logout`, and `loginWithRedirect` functions out of the `useAuth0` hook
+- [x] Call these functions in the two handlers (instead of the `console.log` placeholders)
   <details style="padding-left: 2em">
     <summary>More about login and logout handlers</summary>
 
@@ -218,14 +218,14 @@ Currently, when we are signed in, we still see "john.doe" rendered as the nickna
 
 In `client/components/Nav.tsx`:
 
-- [ ] Delete the hard-coded value for `user` and replace it with the `user` object from `useAuth0`
+- [x] Delete the hard-coded value for `user` and replace it with the `user` object from `useAuth0`
   <details style="padding-left: 2em">
     <summary>More about <code>user</code> in <code>Nav.tsx</code></summary>
 
   Notice how `user?.nickname` has a question mark in front of it. This is called the [optional chaining operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining). When we sign in, the user object may still be null while the `user` object is being fetched from Auth0. This optional chaining operator will prevent the app from crashing if the user object is null (while the user is authenticated).
   </details>
 
-- [ ] When a user is signed in, try `console.log`ing the `user` object. You'll see that it has a `nickname` property; this is what is being rendered in `Nav.tsx`. You may try rendering other properties, such as `name`, `email`, or `image`.
+- [x] When a user is signed in, try `console.log`ing the `user` object. You'll see that it has a `nickname` property; this is what is being rendered in `Nav.tsx`. You may try rendering other properties, such as `name`, `email`, or `image`.
 
 <br />
 
